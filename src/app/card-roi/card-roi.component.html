@@ -1,0 +1,39 @@
+<div class="roi-container">
+    <div class="roi-upper">
+        <span class="icon-wrapper">
+            <i class="fa-solid fa-chart-simple"></i>
+        </span>
+        <h4>
+            ROI
+        </h4>
+        <a href="">
+            Details..
+        </a>
+    </div>
+    <div class="roi-middle">
+        <h2>
+            283%
+        </h2>
+        <p>
+            Return on Investment
+        </p>
+    </div>
+    <div class="roi-lower">
+        <ngx-charts-bar-vertical
+        [customColors]="customColors"
+        [results]="saleData"
+        [xAxisLabel]="'Products'"
+        [legendTitle]="'Product Sale Chart'"
+        [yAxisLabel]="'Sale'"
+        [legend]="false"
+        [showXAxisLabel]="false"
+        [showYAxisLabel]="false"
+        [xAxis]="true"
+        [yAxis]="true"
+        [gradient]="true"
+        [roundEdges]="true"
+        
+        [showGridLines]="false">
+        </ngx-charts-bar-vertical>
+    </div>
+</div>

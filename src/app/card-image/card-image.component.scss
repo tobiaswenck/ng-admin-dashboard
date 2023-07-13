@@ -1,0 +1,43 @@
+.image-container {
+    height: var(--card-size);
+    width: var(--card-size);
+    background-color: var(--light-gray);
+    //z-index: 4;
+    border-radius: 3rem;
+    grid-row: 2;
+    grid-column: 2;
+    padding: var(--padding);
+    //background-image: url("");
+    //object-fit: cover;
+    //border: 1px solid green;
+    background:url('https://i.imgur.com/07JVXdX.png') no-repeat center;
+    background-attachment: scroll;
+    display: flex;
+}
+
+.ai-button {
+    background-color: var(--accent-color);
+    color: var(--dark-gray);
+    height: 3rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: .5rem;
+
+}
+
+.ai-button:hover {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    //box-shadow: 0px 0px 12px var(--accent-color);
+}
+
+.ai-button p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+}

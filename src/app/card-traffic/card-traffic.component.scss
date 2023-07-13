@@ -1,0 +1,133 @@
+.traffic-container {
+    height: var(--card-size);
+    width: var(--card-size);
+    background-color: var(--accent-color);
+    //z-index: 4;
+    border-radius: 3rem;
+    grid-row: 1;
+    grid-column: 2;
+    padding: var(--padding);
+    //border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    //padding: 0;
+}
+
+.traffic-upper {
+    //border: 1px solid brown;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    //justify-content: center;
+    //align-items: center;
+    
+}
+
+.traffic-upper span {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: left;
+    //border: 1px solid black;
+}
+
+.traffic-upper h4 {
+    color: var(--base-color);
+    font-size: 2rem;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    //border: 1px solid blue;
+    position: relative;
+    //height: 100%;
+}
+
+.traffic-upper a {
+    position: relative;
+    color: var(--dark-gray);
+    font-size: 1.4rem;
+    width: 20%;
+    height: 80%;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    //border: 1px solid gray;
+    display: flex;
+}
+
+.traffic-upper a p {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.traffic-middle {
+    //border: 1px solid red;
+    width: 100%;
+    height: 50%;
+}
+
+.traffic-lower {
+    //border: 1px solid green;
+    width: 100%;
+    height: 30%;
+    color: var(--base-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.traffic-lower span {
+    //border: 1px solid var(--font-color);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    //border: 1px solid red;
+}
+
+.stat-upper {
+    display: flex;
+    flex-direction: row;
+    //border: 1px solid green;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--accent-gray);
+    //border-len
+}
+
+.stat-upper i {
+    color: var(--dark-gray);
+}
+
+.stat-lower {
+    display: flex;
+    flex-direction: row;
+    //border: 1px solid blue;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-lower i {
+    color: var(--light-gray);
+}

@@ -1,0 +1,28 @@
+<div class="customer-container">
+    <span>
+        <h4>
+            Customer Churn Rate
+        </h4>
+    </span>
+    <div class="customer-chart-container">
+        
+<ngx-charts-bar-vertical
+            [customColors]="customColors"
+            [results]="saleData"
+            [xAxisLabel]="'Products'"
+            [legendTitle]="'Product Sale Chart'"
+            [yAxisLabel]="'Sale'"
+            [legend]="false"
+            [showXAxisLabel]="false"
+            [showYAxisLabel]="false"
+            [xAxis]="true"
+            [yAxis]="true"
+            [gradient]="true"
+            [roundEdges]="true"
+            
+            [showGridLines]="false">
+        </ngx-charts-bar-vertical>
+    
+        
+    </div>
+</div>

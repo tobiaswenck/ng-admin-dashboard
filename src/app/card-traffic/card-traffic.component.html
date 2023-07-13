@@ -1,0 +1,35 @@
+<div class="traffic-container">
+    <div class="traffic-upper">
+        <span>
+            <h4>Website traffic</h4>
+            <a href=""><p>More..</p></a>
+        </span>
+    </div>
+    <div class="traffic-middle">
+        
+            <ngx-charts-pie-chart 
+            [customColors]="customColors"
+            [results]="saleData"
+            [doughnut]="true"
+            [explodeSlices]="true"
+            [legend]="false"
+            [legendTitle]="'Product Sale Report'" 
+            [animations]="true"
+            [labels]="false" >
+        </ngx-charts-pie-chart>
+   
+        
+    </div>
+    <div class="traffic-lower">
+        <div class="stat-upper">
+            <i class="fas fa-square"></i>
+            <span><p>Social Media</p></span>
+            <p>78%</p>
+        </div>
+        <div class="stat-lower">
+            <i class="fas fa-square"></i>
+            <span><p>Organic Search</p></span>
+            <p>22%</p>
+        </div>
+    </div>
+</div>

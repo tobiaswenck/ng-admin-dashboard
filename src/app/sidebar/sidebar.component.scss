@@ -1,0 +1,250 @@
+* {
+  font-family: var(--font-family);
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+  width: 90%;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  color: var(--font-color);
+  font-weight: 300;
+  font-size: 2.2rem;
+  text-align: center;
+  width: 100%;
+  border-radius: 1rem;
+  float: right;  
+}
+
+
+a p {
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-left: 3rem;
+  align-self: center;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+i {
+  font-size: 2.4rem;
+  justify-self: center;
+}
+
+a span {
+  float: left;
+  width: 2vw;
+  height: 2vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0;
+}
+
+.sidebar-container {
+  grid-area: 1 / 1 / 1 / 1;
+  width: 18vw;
+  height: 100vh;
+  background-color: var(--base-color);
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid var(--dark-gray);
+}
+
+.logo-container {
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+.logo-container img {
+  height: 6rem;
+  width: 6rem;
+}
+
+.logo-container h2 {
+  font-size: 2.4rem;
+  justify-self: center;
+}
+
+.profile-container {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-container h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.profile-container img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.profile-container a {
+  font-size: 1.4rem;
+  font-weight: 100;
+  border: 1px solid var(--font-color);
+  text-align: center;
+  align-items: center;
+  width: 20%;
+  justify-content: center;
+  height: 2rem;
+}
+
+.profile-container a p {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-container a:hover {
+  background-color: var(--dark-gray);
+}
+
+.nav-bar {
+  height: 42vh;
+  width: 80%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0;
+}
+
+.nav-bar li {
+  width: 100%;
+}
+
+.nav-bar a {
+  padding: 2rem;
+}
+
+.nav-bar a:hover {
+  background-color: var(--dark-gray);
+}
+
+/* 
+    Switch Styles
+*/
+
+.switch-container {
+  width: 100%;
+  height: 34px;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  padding-bottom: 2vh;
+}
+
+.p-dark {
+  z-index: 100;
+}
+
+.p-light {
+  margin-left: 3.2vw;
+  
+}
+
+.switch-label {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.switch-container p {
+  height: 34px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 1rem;
+  width: 4vw;
+  justify-content: center;
+  font-weight: 100;
+}
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--base-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 2px solid var(--dark-gray);
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 3px;
+    background-color: var(--accent-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--accent-color);
+  }
+
+  input:checked + .slider:before {
+    background-color: var(--dark-gray);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--accent-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

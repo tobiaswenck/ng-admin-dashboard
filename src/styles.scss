@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@use "/src/app/app.component.scss";
+@use "/src/app/sidebar/sidebar.component.scss";
+@use "/src/app/header/header.component.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+
+:root {
+
+    font-size: 14px;
+    --base-color: #242529;
+    --light-gray: #DCDCDC;
+    --dark-gray: #37373C;
+    --accent-color: #FCF28A;
+    --font-color: #FBEBE0;
+    --accent-gray: #A3A3A4;
+
+    --padding: 3rem;
+    
+    --font-family: 'Roboto Condensed', sans-serif;
+
+    --card-size: 300px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
