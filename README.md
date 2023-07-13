@@ -1,3 +1,6 @@
+node_modules missing, this is just to present the source code
+
+
 # AdminDashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
